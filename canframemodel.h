@@ -69,6 +69,8 @@ public:
     void set_filterEMCYon(bool state) {filterEMCYon = state; sendRefresh();};
     void set_filterHBEATon(bool state) {filterHBEATon = state; sendRefresh();};
     void set_filterTIMEon(bool state) {filterTIMEon = state; sendRefresh();};
+    void set_filterTPDOon(bool state) {filterTPDOon = state; sendRefresh();};
+    void set_filterLSSon(bool state) {filterLSSon = state; sendRefresh();};
     bool filterFrameConsideringFunction(int frame_id);
 
     QString printSDO(int sdo, const unsigned char *data) const;
@@ -94,6 +96,8 @@ private:
     bool filterEMCYon;
     bool filterHBEATon;
     bool filterTIMEon;
+    bool filterTPDOon;
+    bool filterLSSon;
     DBCHandler *dbcHandler;
     QMutex mutex;
     bool interpretFrames; //should we use the dbcHandler?

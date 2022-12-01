@@ -336,33 +336,48 @@ bool CANFrameModel::filterFrameConsideringFunction(int frame_id)
         else
             return (true);
         break;
-//    case 3:
-//        return "T PDO1";
-//        break;
+    case 3:
+        if (this->filterTPDOon)
+            return (false);
+        else
+            return (true);
+        break;
 //    case 4:
 //        return "R PDO1";
 //        break;
-//    case 5:
-//        return "T PDO2";
-//        break;
+    case 5:
+        if (this->filterTPDOon)
+            return (false);
+        else
+            return (true);
+        break;
 //    case 6:
 //        return "R PDO2";
 //        break;
-//    case 7:
-//        return "T PDO3";
-//        break;
+    case 7:
+        if (this->filterTPDOon)
+            return (false);
+        else
+            return (true);
+        break;
 //    case 8:
 //        return "R PDO3";
 //        break;
-//    case 9:
-//        return "T PDO4";
-//        break;
+    case 9:
+        if (this->filterTPDOon)
+            return (false);
+        else
+            return (true);
+        break;
 //    case 10://1010
 //        return "R PDO4";
 //        break;
-//    case 11://1011
-//        return "T SDO";
-//        break;
+    case 11://1011
+        if (this->filterTPDOon)
+            return (false);
+        else
+            return (true);
+        break;
 //    case 12://1100
 //        return "R SDO";
 //        break;
@@ -375,9 +390,12 @@ bool CANFrameModel::filterFrameConsideringFunction(int frame_id)
         else
             return (true);
         break;
-//    case 15://1111
-//        return "LSS";
-//        break;
+    case 15://1111
+        if (this->filterLSSon)
+            return (false);
+        else
+            return (true);
+        break;
     default:
         return (true);
     }

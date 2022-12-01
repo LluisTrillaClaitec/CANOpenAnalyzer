@@ -114,6 +114,10 @@ private slots:
 
     void on_filterTIME_stateChanged(int arg1);
 
+    void on_filterTPDO_stateChanged(int arg1);
+
+    void on_filterLSS_stateChanged(int arg1);
+
 public slots:
     void gotFrames(int);
     void updateSettings();

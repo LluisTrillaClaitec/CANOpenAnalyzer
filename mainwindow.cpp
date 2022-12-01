@@ -1209,3 +1209,21 @@ void MainWindow::on_filterTIME_stateChanged(int arg1)
     else
         model->set_filterTIMEon(false);
 }
+
+void MainWindow::on_filterTPDO_stateChanged(int arg1)
+{
+    arg1 = ui->filterTPDO->isChecked();
+    if (arg1)
+        model->set_filterTPDOon(true);
+    else
+        model->set_filterTPDOon(false);
+}
+
+void MainWindow::on_filterLSS_stateChanged(int arg1)
+{
+    arg1 = ui->filterLSS->isChecked();
+    if (arg1)
+        model->set_filterLSSon(true);
+    else
+        model->set_filterLSSon(false);
+}

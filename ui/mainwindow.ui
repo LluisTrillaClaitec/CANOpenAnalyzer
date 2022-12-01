@@ -32,7 +32,6 @@
       <property name="font">
        <font>
         <pointsize>11</pointsize>
-        <weight>50</weight>
         <bold>false</bold>
        </font>
       </property>
@@ -95,7 +94,6 @@
         <property name="font">
          <font>
           <pointsize>11</pointsize>
-          <weight>75</weight>
           <italic>true</italic>
           <bold>true</bold>
          </font>
@@ -275,6 +273,20 @@
        <widget class="QCheckBox" name="filterTIME">
         <property name="text">
          <string>Filter TIME</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="filterTPDO">
+        <property name="text">
+         <string>Filter TPDO</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="filterLSS">
+        <property name="text">
+         <string>Filter LSS</string>
         </property>
        </widget>
       </item>
