@@ -91,13 +91,13 @@ private:
     QVector<CANFrame> frames;
     QVector<CANFrame> filteredFrames;
     QMap<int, bool> filters;
-    bool filterNMTon;
-    bool filterSYNCon;
-    bool filterEMCYon;
-    bool filterHBEATon;
-    bool filterTIMEon;
-    bool filterTPDOon;
-    bool filterLSSon;
+    bool filterNMTon = false;
+    bool filterSYNCon = false;
+    bool filterEMCYon = false;
+    bool filterHBEATon = false;
+    bool filterTIMEon = false;
+    bool filterTPDOon = false;
+    bool filterLSSon = false;
     DBCHandler *dbcHandler;
     QMutex mutex;
     bool interpretFrames; //should we use the dbcHandler?
